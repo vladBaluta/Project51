@@ -12,6 +12,6 @@ public class BoundaryApiImpl {
 	@GET
 	@Path("{username}")
 	public Response getMessage(@PathParam("username") String username) {
-		return Response.status(200).entity(String.format("Hallo, %s!", username)).build();
+		return Response.status(200).entity(String.format("Hi, %s!", username)).build();
 	}
 }
